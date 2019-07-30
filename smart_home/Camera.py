@@ -52,8 +52,6 @@ class CameraData:
                 nameHome = "Unknown"
                 self.homes[homeId]["name"] = nameHome
             if not homeId:
-                print("----------------SKIPPED-----------------")
-                print(item)
                 continue
             if homeId not in self.cameras:
                 self.cameras[homeId] = {}
