@@ -52,6 +52,7 @@ class CameraData:
                 nameHome = "Unknown"
                 self.homes[homeId]["name"] = nameHome
             if not homeId:
+                LOG.error('No key ["id"] in %s', item.keys())
                 continue
             if homeId not in self.cameras:
                 self.cameras[homeId] = {}
